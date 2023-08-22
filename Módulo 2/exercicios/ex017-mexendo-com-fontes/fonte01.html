@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        
+        body {
+            /* significa que ele vai tentar primeiro a arial, se não achar, vai pra helvetica, se não achar, vai pra alguma genérica do tipo sans-serif */
+            font-family: Arial, Helvetica, sans-serif; 
+            
+            /* 
+            -- Medidas absolutas --
+            cm, mm, in (polegada), px, pt, pc (as duas últimas não se recomenda usar em material impresso em tela)
+
+            -- Medidas relativas --
+            em (relativa ao M maiusculo de uma determinada fonte), ex (relativa a altura do X de uma fonte), rem (relativa a fonte que está configurada no body), vw (relativo a largura da viewport (tamanho da sua tela)), vh (altura da viewport), %
+
+            16px geralmente = 1em
+
+            Recomendação oficial da W3C = use px ou em
+            */
+
+            font-size: 1em;
+            
+            /* peso da fonte: lighter, normal, bold, bolder 
+            tb posso ter variação numérica: 100 - 900 */
+            font-weight: normal; 
+
+            font-style: normal; /* normal ou itálico */
+
+            /* para sublinhado, usamos a propriedade text-decoration */
+            text-decoration: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus voluptatem inventore aperiam adipisci eius quod blanditiis dicta maxime eligendi perspiciatis dolorum recusandae repellat ipsam porro doloremque, necessitatibus et iure delectus placeat accusamus rem. Debitis itaque dicta quo provident earum necessitatibus explicabo dolor, officia excepturi labore eum, iusto illum deserunt expedita tempora velit reiciendis. Deleniti suscipit alias culpa sed illum qui fuga quia quisquam assumenda tempore, dignissimos quis iste numquam eos rerum voluptatem deserunt, veniam accusamus? Atque ab tenetur minima, recusandae ex unde sint culpa alias, accusamus nihil iure sit vitae, nostrum tempora id asperiores autem dicta ratione perspiciatis molestiae.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, quibusdam rerum dolores labore nostrum, excepturi placeat suscipit at commodi corrupti quisquam perferendis incidunt distinctio eveniet dolore delectus! Sed, incidunt quae!</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta placeat vero velit a voluptatum quod quam asperiores maiores fuga expedita repudiandae accusamus alias iusto nisi iste, cupiditate repellat laborum atque amet nulla. Culpa delectus optio molestias blanditiis recusandae repellendus accusamus laborum ea consequatur quo eum quis autem, minus, perferendis tenetur!</p>
+    
+</body>
+</html>

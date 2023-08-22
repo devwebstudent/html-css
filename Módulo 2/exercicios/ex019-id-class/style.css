@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*  
+em HTML é id =, class = (só pode 1 elemento por página)
+em CSS é # e . (pode vários elementos por página)
+
+ID é único dentro de uma página
+Class é para vários elementos com as mesmas características
+*/
+
+body {
+    background-color: rgb(209, 255, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(0, 136, 0);
+}
+
+/* Configuração abaixo é um Seletor Personalizado */
+#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: rgb(49, 226, 49);
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: rgb(180, 180, 1);
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(255, 255, 0, 0.247);
+}

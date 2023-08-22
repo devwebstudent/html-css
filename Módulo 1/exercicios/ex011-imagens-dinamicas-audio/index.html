@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <!-- IMPORTANTE! - os itens mais acima devem ser os menores tamanho para max-width; 
+        o ÚLTIMO item deve ser a imagem padrão que você quer carregar -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">            
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <!-- Primeira maneira de colocar áudio -->
+    <audio src="midia/shake-it.mp3" autoplay controls>Shake It.</audio>
+        <!-- Compatível com: .mp3, .wav, .ogg-->
+    
+    <!-- Outra maneira de colocar áudio abaixo: -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/race-car.mp3" type="audio/mpeg">
+    <!-- A ordem é importante: o que você colocar primeiro, vai ser o que ele vai tentar reproduzir antes -->
+    </audio>
+    
+    <br>
+    
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. Clique <a href="midia/race-car.mp3" download type="audio/mpeg">aqui</a> para baixar o arquivo.</p>
+</body>
+</html>
