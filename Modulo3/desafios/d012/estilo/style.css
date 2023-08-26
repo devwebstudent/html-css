@@ -47,21 +47,23 @@ header a, footer a {
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+header a:hover {
     text-decoration: underline;
+    color: rgb(156, 156, 156)
 }
 
-section {
+section {    
     padding-top: 10vh; /* 10% da altura da tela */
     padding-bottom: 10vh;
     line-height: 2em; /* Para facilitar a leitura, colocamos um espaçamento duplo entre as linhas */
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.404);
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.205);
 }
 
 section.normal {
+    background-image: linear-gradient(to bottom, white, lightgray);
     background-color: white;
     color: black;
 }
@@ -81,7 +83,7 @@ footer {
     background-color: black;    
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 3px;
 }
 
 footer a:hover {
