@@ -26,13 +26,15 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    background-image: linear-gradient(to top, #000, #4D4D4D, #000);
+    text-shadow: 5px 5px 2px black;
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* fico com todas as letras maiúsculas, mas as primeiras ficam maiores */
     font-family: var(--fonte2);
-    font-size: 10vw; /* Fonte com 10% da largura da tela (viewport width) */
+    font-size: 10vw; /* Fonte com 10% da largura da tela (viewport width) */    
 }
 
 header > p {
@@ -56,6 +58,7 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.404);
 }
 
 section.normal {
@@ -71,12 +74,17 @@ section.imagem {
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.253);
     display: inline-block;
-    padding: 5px;
+    padding: 5px;    
 }
 
 footer {
-    background-color: black;
+    background-color: black;    
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
 }
