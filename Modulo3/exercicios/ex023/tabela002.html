@@ -10,17 +10,8 @@
         }
         
         table {
-            width: 500px;           
-            border-collapse: collapse;
-        }
-
-        td.top10 {
-            text-align: center;
-            width: 500px;
-            background-color: aquamarine;
-            color: black;
-            font-weight: bold;
-            padding: 10px 20px;
+            max-width: 500px;
+            border-collapse: collapse; /* Valor COLLAPSE, Para tirar espaços entre os dados da tabela */
         }
 
         thead, tfoot {
@@ -28,21 +19,28 @@
             color: white;
         }
 
+        td.top10 {
+            text-align: center;
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+            padding: 5px;
+        }
+        
         td, th {
             border: 1px solid black;
-            padding: 10px 80px;
             text-align: center;
+            padding: 10px 50px;
         }
 
-        td.estados {
+        td.estados {            
+            text-align: center;
             padding: 10px;
-            text-align: center;
         }
 
-        td.num {
-            background-image: linear-gradient(to right, rgba(8, 235, 57, 0.5), transparent);
+        td.num {            
             text-align: right;
-            padding-right: 10px;
+            padding: 10px;
         }
 
     </style>
@@ -138,11 +136,12 @@
         </tbody>
 
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td>--</td>
-            <td><strong>151.049.408</strong></td>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>--</td>
+                <td class="num"><strong>151.049.408</strong></td>
+            </tr>
         </tfoot>
-
     </table>
     
 </body>
