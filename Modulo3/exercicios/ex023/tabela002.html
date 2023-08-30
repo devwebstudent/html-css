@@ -12,6 +12,14 @@
         table {
             max-width: 500px;
             border-collapse: collapse; /* Valor COLLAPSE, Para tirar espaços entre os dados da tabela */
+            position: relative;
+        }
+
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
 
         thead, tfoot {
@@ -19,12 +27,18 @@
             color: white;
         }
 
-        td.top10 {
-            text-align: center;
-            background-color: aquamarine;
-            color: black;
-            font-weight: bold;
-            padding: 5px;
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(odd) { /* odd = 2n-1 */
+            background-color: rgba(211, 211, 211, 0.425);
+        }
+
+        tbody tr:nth-child(even) { /* even = 2n */
+            background-color: white;
         }
         
         td, th {
@@ -34,7 +48,6 @@
         }
 
         td.estados {            
-            text-align: center;
             padding: 10px;
         }
 
@@ -47,8 +60,12 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!-- ANATOMIA PARA TABELAS GRANDES (w3c recomenda para tabelas com muitos dados):
+    
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES (w3c recomenda para tabelas com muitos dados):
         TABLE
+
+            CAPTION (legenda da tabela, geralmente fica em cima)
             THEAD (na cabeça, vou colocar uma linha só)
                 TR, TD, TH
 
@@ -57,18 +74,15 @@
 
             TFOOT
                 TR, TD, TH
-    
     -->
 
     <table>
+        <caption>Top 10 Estados por população</caption>
         <thead>
             <tr>
-                <td class="top10">Top 10 Estados com maior população do Brasil</td>
-            </tr>
-            <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -137,7 +151,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>--</td>
                 <td class="num"><strong>151.049.408</strong></td>
             </tr>
